@@ -1,2 +1,2 @@
 # scalatest-util
-Utilities for scalatest.
+Utilities for [scalatest](http://scalatest.org/).
