@@ -7,7 +7,7 @@ trait ArbitraryValues {
 
   class Unique[A](implicit arb: Arbitrary[A]) {
     private[this] var set: Set[A] = Set.empty[A]
-    
+
     def next(): A = synchronized {
       val a = Stream.continually(sample[A]).filter(s => !set.contains(s)).head
       set = set + a
