@@ -11,7 +11,8 @@ trait FutureValues {
 
   implicit class Rendezvous[A](future: Future[A]) {
     /**
-     * @see [[Await.result]]
+     * Await and return the result of an `future`.
+     * @see scala.concurrent.Await.result
      */
     def rendezvous(atMost: Duration = defaultAtMost): A = Await.result(future, atMost)
   }
