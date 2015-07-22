@@ -8,11 +8,11 @@ libraryDependencies ++= Seq("org.scalatest" %% "scalatest" % "2.2.4", "org.scala
 
 testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-oD")
 
-version := "0.1.0"
-
 organization := "com.github.nokamoto"
 
 name := "scalatest-util"
+
+version := "0.1.0"
 
 publishMavenStyle := true
 
@@ -28,7 +28,7 @@ publishArtifact in Test := false
 
 pomIncludeRepository := { _ => false }
 
-pomExtra := (
+pomExtra :=
   <url>https://github.com/nokamoto/scalatest-util</url>
   <licenses>
     <license>
@@ -47,4 +47,4 @@ pomExtra := (
       <name>Naofumi Okamoto</name>
       <url>https://github.com/nokamoto</url>
     </developer>
-  </developers>)
+  </developers>
